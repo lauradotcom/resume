@@ -1,0 +1,189 @@
+::selection {
+  background-color: #F0CA68;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25rem;
+  background-color: #F4F8E5;
+  color: #0B232E;
+  
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+header {
+  background-color: #087C74;
+  color: #F4F8E5;
+  text-align: center;
+  padding: 2vh 2vw;
+}
+
+header a, header a:visited {
+  color: #F4F8E5;
+}
+
+h1 {
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+  /*text-transform: uppercase;
+  letter-spacing: 0.25rem;*/
+  padding-bottom: 2vh;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+  padding-bottom: 2vh;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  padding-top: 2vh;
+  padding-bottom: 1vh;
+}
+
+address {
+  /*width: 25%;*/
+  display: grid;
+  grid-template-columns: repeat(5, 48px);
+  grid-template-rows: 48px;
+  justify-items: stretch;
+  align-items: center;
+  justify-content: center;
+  /*padding: 0 35% 0 35%;*/
+}
+
+i {
+  font-size: 1.5rem;
+  margin: 2%;
+}
+
+i:hover {
+  color: #23CABE;
+}
+
+#contact-detail {
+  color: #F0CA68;
+  font-weight: 400;
+}
+
+hr {
+  width: 5vw;
+  margin: 0 0 2vh 0;
+  border: solid 1px #087C74;
+}
+
+section {
+  margin: 5vh 5vw;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  background-color: #087C74;
+  color: #F4F8E5;
+  font-weight: 400;
+  padding: 1vh 2vw;
+  margin-right: 2vw;
+  margin-bottom: 1vh;
+  border-radius: 5px;
+  cursor: default;
+}
+
+.skills li:hover {
+  background-color: #23CABE;
+  color: #0B232E;
+  transition-duration: 150ms;
+}
+
+.skills li i {
+  font-size: 1rem;
+}
+
+#experience p {
+  font-weight: 400;
+  font-style: italic;
+  padding-bottom: 1vh;
+}
+
+#experience ul {
+  list-style: disc;
+  padding-left: 2vw;
+}
+
+#experience li {
+  padding-bottom: 0.5vh;
+}
+
+.school {
+  font-style: italic;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 1024px) {
+
+  #education {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas: "header header header header"
+    "divider divider divider divider"
+    "item item item item"
+  }
+
+  #education h2 {
+    grid-area: header;
+  }
+
+  #education hr {
+    grid-area: divider;
+  }
+
+}
+
+footer {
+  background-color: #0B232E;
+  min-height: 50px;
+}
+
+/* Darkmode Styles */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0B232E;
+    color: #23CABE;
+  }
+
+  header {
+    background-color: #0B232E;
+  }
+
+  h2 {
+    color: #23CABE;
+  }
+
+  h3 {
+    color: #F0CA68;
+  }
+
+  #contact-detail {
+    color: #23CABE;
+  }
+}
